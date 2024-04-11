@@ -61,7 +61,25 @@ sudo apt-get install foremost
 
 Run Foremost:
 
-To recover files from the dd image file, use the following command syntax:
+Once Foremost is successfully started, a Terminal opens, displaying the program version, creators, and some of the many switches for usage:
+
+![image](https://github.com/ananthan05/Cyber-Forensics/assets/140697378/a87e7139-1d78-4a11-96df-eab1299998c6)
+
+To have a better understanding of Foremost and the switches used, try browsing the Foremost System Manager's Manual.This can be done by entering the following command:
+
+```
+man foremost
+```
+
+![image](https://github.com/ananthan05/Cyber-Forensics/assets/140697378/381bfec4-a5b8-4c0a-abf1-89d2d30dbdbc)
+
+The syntax for using Foremost is as follows:
+
+```
+foremost -i (forensic image) -o (output folder) -options
+```
+
+To recover the jpg image from  from the dd image file, use the following command syntax:
 
 ```
 foremost -t jpg -i <input_file> -o <output_directory>
@@ -76,13 +94,14 @@ foremost -t jpg -i <input_file> -o <output_directory>
 
 >This command will instruct Foremost to scan the dd image file for JPG images and recover them to the specified output directory.
 
+
 ![image](https://github.com/ananthan05/Cyber-Forensics/assets/140697378/543ebe7d-6225-45e8-9765-5b4323655fb5)
 
-Go to Desktop and check whether there is the recover file present or not.
+Recovery completed. NOW go to Desktop and check whether there is a file named  `Recover`  present or not.
 
 ![image](https://github.com/ananthan05/Cyber-Forensics/assets/140697378/c7a422e6-46e4-426b-8292-55f9b18c6c94)
 
-Now open and check wheather  `cat image`  is recoverd or not.
+Now open and check wheather  the `cat image`  is recoverd or not.
 
 ![image](https://github.com/ananthan05/Cyber-Forensics/assets/140697378/4d55cdb6-fafb-48e6-804d-bb63c5e44955)
 
